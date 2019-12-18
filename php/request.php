@@ -14,17 +14,14 @@ if (!empty($_POST)) {
         $temp = [];
         $txtAry = [];
         foreach ($dataArray as $key => $dataCol) {
-            foreach ($dbColumns as $colkey) {
-                if ($colkey !== 'id') {
-                    $temp[$colkey] =  $dataCol[$colkey];
+            foreach ($dbColumns as $colKey => $colValue) {
+                //echo $colKey;
+                if ($colKey !== 'id') {
+                    $temp[$colKey] =  $dataCol[$colKey];
                 }
             }
             $txtAry[] = $temp;
         }
-
-        // echo '<pre>';
-        // var_dump($txtAry);
-        // echo '</pre>';
         //http://agn.jp/blog/?p=2019
 
         $json = json_encode($txtAry, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);

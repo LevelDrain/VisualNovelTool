@@ -1,4 +1,114 @@
 @charset "utf-8";
-#Container {
-    width: 50%;
+
+/* 共通設定 */
+
+body {
+    font-family: 'Noto Sans JP', 'Josefin Sans', 'メイリオ', 'Meiryo', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', 'Sans-Serif';
+    font-size: 18px;
+    font-size: 113%;
+    line-height: 2;
+    font-weight: 300;
+}
+
+
+/* 画面構成 */
+
+#MainContent {
+    z-index: 0;
+    position: relative;
+    margin: 1% 0;
+}
+
+.Frame {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 800px;
+    height: 495px;
+}
+
+.FrameBG {
+    background-image: url('../img/Cyberpunk_2152105214.jpg');
+    background-size: auto;
+    background-color: black;
+    background-attachment: auto;
+    background-position: left top;
+}
+
+.Character {
+    z-index: 3;
+    position: absolute;
+    margin: 0 10%;
+}
+
+.LeftChara {
+    left: 0;
+    bottom: 105px;
+}
+
+.RightChara {
+    right: 0;
+    bottom: 105px;
+}
+
+#TextBox {
+    z-index: 4;
+    position: absolute;
+    top: 380px;
+    width: 700px;
+    height: 100px;
+    padding: 20px;
+    background-color: #000;
+    opacity: .8;
+    /*中央寄せに関するプロパティ*/
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.Result {
+    color: #fff;
+}
+
+
+/* エフェクト動作関連（JSと連動につき取り扱い注意）*/
+
+.Effect {
+    z-index: 10;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 800px;
+    height: 495px;
+}
+
+.SetBlackFadeIn {
+    -webkit-animation: BlackFadeIn .2s forwards;
+    animation: BlackFadeIn .2s forwards;
+}
+
+@-webkit-keyframes BlackFadeIn {
+    0% {
+        background-color: #000;
+        opacity: 0;
+    }
+    100% {
+        background-color: #000;
+        opacity: 1;
+    }
+}
+
+@keyframes BlackFadeIn {
+    0% {
+        background-color: #000;
+        opacity: 0;
+    }
+    100% {
+        background-color: #000;
+        opacity: 1;
+    }
 }

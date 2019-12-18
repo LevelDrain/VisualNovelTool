@@ -24,9 +24,10 @@ function dbConnect()
 }
 
 $dbColumns = [
-    'id',
-    'imageurl',
-    'position',
-    'name',
-    'serif'
+    'id' => '順序',
+    'imageurl' => '画像ファイル名',
+    'position' => '画像の位置',
+    'name' => 'キャラ名',
+    'serif' => 'セリフ',
+    'effect' => 'エフェクト'
 ];

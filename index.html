@@ -4,21 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no,address=no,email=no">
-	<title>名称未確定なノベルエンジン</title>
+	<title>仮称 | ノベルゲーム</title>
+	<link rel="stylesheet" href="css/ress.min.css">
 	<link rel="stylesheet" href="css/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
-	<div id="Container">
-		<button id="ajax">ajax</button><br>
-		<hr>
-		<p>
-		<span style="text-align:left;"><img id="posLeft" src="" width="300"></span>
-		<span style="text-align:right;"><img id="posRight" src="" width="300"></span>
-		</p>
-		<p><div class="result">▼</div></p>
+<div id="Container">
+			<button id="ajax">start</button><br>
+			<hr>
+	<div id="MainContent">
+			<div class="Frame FrameBG"><p>
+			<span class="Character LeftChara"><img id="posLeft" src="" width="300"></span>
+			<span class="Character RightChara"><img id="posRight" src="" width="300"></span>
+			</p></div>
+		<div id="TextBox">
+			<div class="Result">▼</div>
+		</div>
+		<canvas class="Effect"></canvas>
 	</div>
+</div>
 </body>
 </html>
