@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,25 +8,31 @@
 	<title>仮称 | ノベルゲーム</title>
 	<link rel="stylesheet" href="css/ress.min.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index2.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/ajax.js"></script>
 	<script src="js/main.js"></script>
 </head>
 
 <body>
-<div id="Container">
-			<button id="ajax">start</button><br>
-			<hr>
-	<div id="MainContent">
-			<div class="Frame FrameBG"><p>
-			<span class="Character LeftChara"><img id="posLeft" src="" width="300"></span>
-			<span class="Character RightChara"><img id="posRight" src="" width="300"></span>
-			</p></div>
-		<div id="TextBox">
-			<div class="Result">▼</div>
+	<div id="Container">
+			<button id="ajax">start</button>
+			<input type="button" onclick=window.open("php/index.php","_blank") value="編集画面へ">
+		<br>
+		<hr>
+		<div id="MainContent">
+			<div class="Frame FrameBG">
+				<p>
+					<span class="Character LeftChara"><img id="posLeft" src="" width="300"></span>
+					<span class="Character RightChara"><img id="posRight" src="" width="300"></span>
+				</p>
+			</div>
+			<div id="TextBox">
+				<div class="Result">▼</div>
+			</div>
+			<canvas class="Effect"></canvas>
 		</div>
-		<canvas class="Effect"></canvas>
 	</div>
-</div>
 </body>
+
 </html>

@@ -23,6 +23,25 @@ function dbConnect()
     }
 }
 
+function dbGetData($db, $id)
+{
+    $data = [];
+    if ($id) {
+        $queryRead = $db->prepare('SELECT * FROM textdata WHERE id = :id;');
+        $queryRead->bindParam(':id', $id, PDO::PARAM_INT);
+        $queryRead->execute();
+        $data = $queryRead->fetchAll();
+        // echo '<pre>';
+        // var_dump($data);
+        // echo '</pre>';
+    }
+    if (!count($data)) {
+        header('Location:index.php');
+        exit;
+    }
+    return $data;
+}
+
 $dbColumns = [
     'id' => '順序',
     'imageurl' => '画像ファイル名',

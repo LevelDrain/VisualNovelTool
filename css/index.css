@@ -112,3 +112,8 @@ body {
         opacity: 1;
     }
 }
+
+/* エディタ */
+ul{
+    list-style-type: none;
+}
