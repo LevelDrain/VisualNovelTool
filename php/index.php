@@ -71,7 +71,7 @@ if(isset($_POST['insert'])){
                 </li>
             </ul>
             <p>
-                <button type="submit" id="submit" name="insert">追加</button>
+                <button type="submit" id="submit" name="insert">書き込み</button>
             </p>
         </form>
 

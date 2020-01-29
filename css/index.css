@@ -117,3 +117,46 @@ body {
 ul{
     list-style-type: none;
 }
+
+/* ボタン */
+#ajax{
+	display: inline-block;
+	max-width: 180px;
+	text-align: left;
+	border: 2px solid #293b6a;
+	font-size: 16px;
+	color: #293b6a;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px 16px;
+	border-radius: 4px;
+	transition: .4s;
+}
+
+#ajax:active{
+	/*ボタンを押したとき*/
+	background-color: #293b6a;
+	border-color: #293b6a;
+	color: #FFF;
+}
+
+.bth{
+	display: inline-block;
+	max-width: 180px;
+	text-align: left;
+	border: 2px solid #293b6a;
+	font-size: 16px;
+	color: #293b6a;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px 16px;
+	border-radius: 4px;
+	transition: .4s;
+}
+
+.bth:hover{
+	/*ボタンを押したとき*/
+	background-color: #293b6a;
+	border-color: #293b6a;
+	color: #FFF;
+}
